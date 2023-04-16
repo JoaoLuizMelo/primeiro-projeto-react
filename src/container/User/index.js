@@ -3,8 +3,11 @@ import { useHistory } from "react-router-dom";
 import Avatar from '../../assets/avatar.svg'
 import Arrow from '../../assets/arrow.svg'
 import Trash from '../../assets/trash.svg'
+import { H1 } from "../../components/Title/styles";
+import ContainerItens from "../../components/ContainerItens";
+import Button from "../../components/Button";
 
-import { Container, H1, Image, ContainerItens,  Button, Users } from "./styles";
+import { Container, Image,  Users } from "./styles";
 import axios from "axios";
 
 
@@ -36,9 +39,9 @@ function goBackPage(){
 
 
   return (
-    <Container>
+    <Container >
       <Image alt="Logo-image" src={Avatar} />
-      <ContainerItens>
+      <ContainerItens blurOn={true}>
         <H1>Usuários</H1>
      
         <ul>
@@ -49,7 +52,7 @@ function goBackPage(){
           ))}
         </ul>
 
-         <Button onClick={goBackPage}><img alt="seta" src={Arrow} />Voltar </Button>
+         <Button isBack={true} onClick={goBackPage}><img alt="seta" src={Arrow} />Voltar </Button>
 
       </ContainerItens>
     </Container>

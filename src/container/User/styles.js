@@ -11,15 +11,7 @@ export const Container = styled.div`
     
 `;
 
-export const H1 = styled.h1`
-    font-style: normal;
-    font-weight: 700;
-    font-size: 34px;
-    line-height: 40px;
-    text-align: center;
-    color: #FFFFFF;
-    margin-bottom: 28px;
-`;
+
 
 export const Image = styled.img`
     margin-top: 83px;
